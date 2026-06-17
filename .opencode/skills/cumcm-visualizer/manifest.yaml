@@ -1,0 +1,38 @@
+# CUMCM Visualizer 静态/动态分离声明
+
+# 始终加载（核心契约 + 默认立场）
+always_load:
+  - static/core/contract.md
+  - static/core/stance.md
+
+# 后端选择（Python 唯一，直接加载）
+backend:
+  python:
+    fragment: static/fragments/backend/python.md
+
+# 按需加载（仅在需要时由 Agent 查阅）
+references:
+  chart-types:
+    file: references/chart-types.md
+    trigger: "需要确定图表类型时"
+  palette:
+    file: references/palette.md
+    trigger: "需要选择配色方案时"
+  caption-standard:
+    file: references/caption-standard.md
+    trigger: "需要撰写图注时"
+  problem-specific:
+    file: references/problem-specific-figures.md
+    trigger: "需要按赛题类型选择专用图表时"
+  common-patterns:
+    file: references/common-patterns.md
+    trigger: "需要选择布局模式时"
+  design-theory:
+    file: references/design-theory.md
+    trigger: "需要检查字体/尺寸/导出规范时"
+  qa-checklist:
+    file: references/qa-checklist.md
+    trigger: "图表生成完成后执行QA时"
+  tutorials:
+    file: references/tutorials.md
+    trigger: "需要参考端到端代码示例时"

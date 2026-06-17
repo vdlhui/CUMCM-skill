@@ -1,0 +1,29 @@
+% figure-table-macros.tex — 三线表 + 图注格式宏
+
+% === 三线表 ===
+% 使用 booktabs 宏包，格式如下：
+% \begin{table}[htbp]
+%   \centering
+%   \caption{表X：表描述——关键结论}
+%   \label{tab:xxx}
+%   \begin{tabular}{lccc}
+%     \toprule
+%     列1 & 列2 & 列3 & 列4 \\
+%     \midrule
+%     数据 & 数据 & 数据 & 数据 \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+% === 图注 ===
+% \begin{figure}[htbp]
+%   \centering
+%   \includegraphics[width=0.8\textwidth]{figure.png}
+%   \caption{图X：图描述——关键发现【量化描述】}
+%   \label{fig:xxx}
+% \end{figure}
+
+% 图注要求（P5b 规范 ③）：
+%   - 不看正文，仅看图注+图，能理解核心结论
+%   - 不能写"图X：关系图"/"结果图"/"示意图"
+%   - 必须写"图X：[关键发现]——[量化描述]"

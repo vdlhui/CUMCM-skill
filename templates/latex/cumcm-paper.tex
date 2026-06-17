@@ -1,0 +1,62 @@
+% cumcm-paper.tex — CUMCM 国赛标准 LaTeX 论文骨架
+\documentclass[12pt,a4paper]{ctexart}
+
+% === 页面设置 ===
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+% === 数学与公式 ===
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+
+% === 图表 ===
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\captionsetup{font={small}}
+
+% === 参考文献 ===
+\usepackage[sort&compress]{gbt7714}
+
+% === 其他 ===
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+% === 文档信息 ===
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+% 编号页
+% \thispagestyle{empty}
+% \vspace*{3cm}
+% \begin{center}
+% \Large\bfseries 参赛编号：\rule{3cm}{0.5pt}
+% \end{center}
+% \newpage
+
+% 正文
+\maketitle
+
+\input{abstract-env}
+
+\section{问题重述与分析}
+% 从 P0 提取，用论文语言重述
+
+\section{模型假设与符号说明}
+
+\section{模型建立与求解}
+% 论文主体——按 P5a 递进结构写作
+
+\section{模型评价与改进}
+
+% 参考文献
+\bibliographystyle{gbt7714-numerical}
+\bibliography{references}
+
+\section*{附录}
+% P4 核心代码摘要
+
+\end{document}
